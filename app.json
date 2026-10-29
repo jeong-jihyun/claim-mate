@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "청구메이트",
+    "slug": "claim-mate",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.example.claimmate"
+    },
+    "android": {
+      "package": "com.example.claimmate",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "병원 서류를 촬영해 청구 묶음에 넣기 위해 카메라를 사용합니다.",
+          "photosPermission": "앨범에 있는 병원 서류를 청구 묶음에 넣기 위해 사진을 사용합니다."
+        }
+      ],
+      "expo-notifications"
+    ]
+  }
+}
